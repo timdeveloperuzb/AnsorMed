@@ -216,13 +216,12 @@ body {
   margin-bottom: 40px;
 }
 .registration-call {
-    display: flex;
-    justify-content: center;
-    gap: 88px;
-
+  display: flex;
+  justify-content: center;
+  gap: 88px;
 }
 .registration-link {
-  font-family: "Open Sans" , sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -231,7 +230,31 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 12px 24px;
+}
+
+/* FOOTER  */
+.site-footer {
+  background: #222222;
+  color: #ffffff;
+}
+.site-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #ffffff;
+}
+.white {
+  font-family: "Open Sans" , sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
 }

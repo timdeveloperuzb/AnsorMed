@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -30,12 +32,40 @@ body {
 }
 
 .site-header-logo {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #222222;
   margin-right: 115px;
+  display: flex;
+  align-items: center;
+  margin-right: 115px;
+}
+.site-header-logo img {
+  margin-right: 16px;
+}
+.site-header-logo:hover {
+  color: #de2e54;
+  opacity: 0.8;
+}
+
+.site-header-logo:active {
+  color: #de2e54;
+  opacity: 0.6;
+}
+.site-nav {
+  margin: 0;
+  padding: 0;
 }
 .site-nav-list {
   display: flex;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-nav-item {
   margin-right: 32px;
@@ -54,7 +84,14 @@ body {
   text-transform: uppercase;
   color: #222222;
 }
-
+.site-nav-link:hover {
+  color: #de2e54;
+  opacity: 0.8;
+}
+.site-nav-link:active {
+  color: #de2e54;
+  opacity: 0.6;
+}
 .site-link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -70,6 +107,17 @@ body {
   padding: 12px 24px;
   text-decoration: none;
   margin-left: auto;
+  transition: backgroun 0.4s ease;
+}
+.site-link:hover {
+  color: #de2e54;
+  background: transparent;
+  opacity: 0.8;
+}
+.site-link:active {
+  color: #ffffff;
+  background: #de2e54;
+  opacity: 0.6;
 }
 /* HERO */
 
@@ -233,8 +281,18 @@ body {
   border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 12px 24px;
+  transition: background 0.4s ease, border 0.4s ease;
 }
-
+.registration-link:hover {
+  background: #de2e54;
+  border: 2px solid #de2e54;
+  /* opacity: 0.8; */
+}
+.registration-link:active {
+  background: #de2e54;
+  border: 2px solid #de2e54;
+  opacity: 0.6;
+}
 /* FOOTER  */
 .site-footer {
   background: #222222;
@@ -249,10 +307,14 @@ body {
   color: #ffffff;
 }
 .site-footer-logo {
-    margin-right: 0;
+  margin-right: 0;
+  color: #ffffff;
+}
+.site-footer-logo:active {
+  color: #ffffff;
 }
 .white {
-  font-family: "Open Sans" , sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -260,4 +322,8 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+}
+.white:active {
+  color: #ffffff;
+  opacity: 0.6;
 }
